@@ -5,7 +5,79 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="refit" Version="5.0.23" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Leagues\" />
+    <Folder Include="Leagues\MLB\v1_2\Models\" />
+    <Folder Include="Leagues\NFL\" />
+    <Folder Include="Leagues\NFL\v2_1\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Leagues\NFL\v2_1\Players\" />
+    <Folder Include="Leagues\NFL\v2_1\Players\Request\" />
+    <Folder Include="Leagues\NFL\v2_1\Players\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\ActivePlayers\" />
+    <Folder Include="Leagues\MLB\v1_2\ActivePlayers\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\ActivePlayers\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\ConferenceTeamStandings\" />
+    <Folder Include="Leagues\MLB\v1_2\ConferenceTeamStandings\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\ConferenceTeamStandings\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\CumulativePlayerStats\" />
+    <Folder Include="Leagues\MLB\v1_2\CurrentSeason\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyDfs\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyGameSchedule\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyPlayerStats\" />
+    <Folder Include="Leagues\MLB\v1_2\DivisionTeamStandings\" />
+    <Folder Include="Leagues\MLB\v1_2\FullGameSchedule\" />
+    <Folder Include="Leagues\MLB\v1_2\GameBoxScore\" />
+    <Folder Include="Leagues\MLB\v1_2\GamePlayByPlay\" />
+    <Folder Include="Leagues\MLB\v1_2\GameStartingLineup\" />
+    <Folder Include="Leagues\MLB\v1_2\LatestUpdates\" />
+    <Folder Include="Leagues\MLB\v1_2\OverallTeamStandings\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerGameLogs\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerInjuries\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayoffTeamStandings\" />
+    <Folder Include="Leagues\MLB\v1_2\RosterPlayers\" />
+    <Folder Include="Leagues\MLB\v1_2\Scoreboard\" />
+    <Folder Include="Leagues\MLB\v1_2\TeamGameLogs\" />
+    <Folder Include="Leagues\MLB\v1_2\CumulativePlayerStats\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\CumulativePlayerStats\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\CurrentSeason\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\CurrentSeason\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyDfs\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyDfs\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyGameSchedule\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyGameSchedule\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyPlayerStats\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\DailyPlayerStats\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\DivisionTeamStandings\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\DivisionTeamStandings\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\FullGameSchedule\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\FullGameSchedule\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\GameBoxScore\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\GameBoxScore\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\GamePlayByPlay\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\GamePlayByPlay\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\GameStartingLineup\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\GameStartingLineup\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\LatestUpdates\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\LatestUpdates\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\OverallTeamStandings\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\OverallTeamStandings\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerGameLogs\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerGameLogs\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerInjuries\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayerInjuries\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayoffTeamStandings\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\PlayoffTeamStandings\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\RosterPlayers\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\RosterPlayers\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\Scoreboard\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\Scoreboard\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\TeamGameLogs\Request\" />
+    <Folder Include="Leagues\MLB\v1_2\TeamGameLogs\Response\" />
+    <Folder Include="Leagues\MLB\v1_2\CumulativePlayerStats\Response\Stats\" />
+  </ItemGroup>
 </Project>

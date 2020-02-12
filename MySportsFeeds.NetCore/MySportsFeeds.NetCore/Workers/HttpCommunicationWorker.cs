@@ -15,14 +15,6 @@ namespace MySportsFeeds.NetCore.Workers
         private Uri baseUrl;
 
         /// <summary>
-        /// Gets or sets the version.
-        /// </summary>
-        /// <value>
-        /// The version.
-        /// </value>
-        public string Version { get; set; }
-
-        /// <summary>
         /// The authentication header
         /// </summary>
         private AuthenticationHeaderValue authenticationHeader = null;
@@ -33,35 +25,26 @@ namespace MySportsFeeds.NetCore.Workers
         /// <param name="baseUrl">The base URL.</param>
         /// <param name="username">The username.</param>
         /// <param name="password">The password.</param>
-        public HttpCommunicationWorker(string baseUrl, string version, string username, string password)
+        public HttpCommunicationWorker(string baseUrl, string apiKey, string password)
         {
-            Version = version;
             this.baseUrl = new Uri(baseUrl);
             
-            SetBasicAuthentication(username, password);
+            SetBasicAuthentication(apiKey, password);
         }
 
         /// <summary>
         /// Sets the basic authentication.
         /// </summary>
         /// <param name="base64Auth">The base64 authentication.</param>
-        public void SetBasicAuthentication(string base64Auth)
+        public void SetBasicAuthentication(string apiKey, string password)
         {
-            this.authenticationHeader = new AuthenticationHeaderValue("Basic", base64Auth);
-        }
 
-        /// <summary>
-        /// Sets the basic authentication.
-        /// </summary>
-        /// <param name="username">The username.</param>
-        /// <param name="password">The password.</param>
-        public void SetBasicAuthentication(string username, string password)
-        {
-            byte[] userPassBytes = Encoding.UTF8.GetBytes(string.Format("{0}:{1}", username, password));
+            var credentials = $"{apiKey}:{password}";
+            byte[] userPassBytes = Encoding.UTF8.GetBytes(credentials);
             string userPassBase64 = Convert.ToBase64String(userPassBytes);
-
-            SetBasicAuthentication(userPassBase64);
+            this.authenticationHeader = new AuthenticationHeaderValue("Basic", userPassBase64);
         }
+
 
         /// <summary>
         /// Creates a new instance of System.Net.Http.HttpClient
