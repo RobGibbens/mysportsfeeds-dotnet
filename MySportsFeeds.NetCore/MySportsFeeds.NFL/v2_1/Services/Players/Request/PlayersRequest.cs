@@ -1,7 +1,7 @@
 ﻿using System;
 using Refit;
 
-namespace MySportsFeeds.NetCore.v2_1.NFL.Request
+namespace MySportsFeeds.NFL.v2_1.Requests
 {
     public class PlayersRequest
     {

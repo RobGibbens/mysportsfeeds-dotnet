@@ -1,8 +1,7 @@
-﻿using System;
-using MySportsFeeds.NetCore.Enums;
-using MySportsFeeds.NetCore.v1_2.Helpers.Mlb;
+﻿using MySportsFeeds.NFL.v2_1.Enums;
+using System;
 
-namespace MySportsFeeds.NetCore.v2_1.Helpers.NFL
+namespace MySportsFeeds.NFL.v2_1.Helpers
 {
     internal class UrlBuilder
     {

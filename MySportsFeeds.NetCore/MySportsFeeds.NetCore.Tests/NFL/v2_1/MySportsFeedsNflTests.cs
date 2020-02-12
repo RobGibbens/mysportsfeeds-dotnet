@@ -1,21 +1,19 @@
 ﻿using System.Threading.Tasks;
-using Xunit;
-using MySportsFeeds.NetCore.Enums;
 using System.Linq;
 using System;
-using MySportsFeeds.NetCore.v1_2.Helpers.Mlb;
-using MySportsFeeds.NetCore.v2_1.NFL;
-using MySportsFeeds.NetCore.v2_1.NFL.Players.Response;
-using MySportsFeeds.NetCore.v2_1.NFL.Request;
+using MySportsFeeds.NFL.v2_1.Requests;
+using MySportsFeeds.NFL.v2_1.Players.Responses;
+using NUnit.Framework;
 
 namespace MySportsFeeds.NetCore.IntegrationTests.NFL
 {
+    [TestFixture]
     public class MySportsFeedsNflTests : NflTestBase
     {
         private const string FOR_DATE = "20180527";
         private const string GAME_ID = "44218";
        
-        [Fact]
+        [Test]
         public async Task Can_Get_Players()
         {
             PlayersResponse response;

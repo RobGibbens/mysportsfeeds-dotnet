@@ -1,6 +1,4 @@
-using MySportsFeeds.NetCore.v1_2;
-using MySportsFeeds.NetCore.v2_1;
-using MySportsFeeds.NetCore.v2_1.NFL;
+using MySportsFeeds.NFL.v2_1;
 
 namespace MySportsFeeds.NetCore.IntegrationTests.NFL
 {

@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using MySportsFeeds.NetCore.v2_1.NFL.Players.Response;
-using MySportsFeeds.NetCore.v2_1.NFL.Request;
+using MySportsFeeds.NFL.v2_1.Players.Responses;
+using MySportsFeeds.NFL.v2_1.Requests;
 using Refit;
 
-namespace MySportsFeeds.NetCore.v2_1.NFL
+namespace MySportsFeeds.NFL.v2_1
 {
     public interface IMySportsFeeds
     {

@@ -12,12 +12,7 @@
   <ItemGroup>
     <Folder Include="Leagues\" />
     <Folder Include="Leagues\MLB\v1_2\Models\" />
-    <Folder Include="Leagues\NFL\" />
-    <Folder Include="Leagues\NFL\v2_1\" />
     <Folder Include="Helpers\" />
-    <Folder Include="Leagues\NFL\v2_1\Players\" />
-    <Folder Include="Leagues\NFL\v2_1\Players\Request\" />
-    <Folder Include="Leagues\NFL\v2_1\Players\Response\" />
     <Folder Include="Leagues\MLB\v1_2\ActivePlayers\" />
     <Folder Include="Leagues\MLB\v1_2\ActivePlayers\Request\" />
     <Folder Include="Leagues\MLB\v1_2\ActivePlayers\Response\" />

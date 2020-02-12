@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace MySportsFeeds.NetCore.v2_1.NFL.Players.Response
+namespace MySportsFeeds.NFL.v2_1.Players.Responses
 {
     public partial class TeamReference
     {

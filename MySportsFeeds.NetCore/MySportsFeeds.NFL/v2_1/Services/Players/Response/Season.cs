@@ -1,6 +1,6 @@
-﻿using MySportsFeeds.NetCore.Enums;
+﻿using MySportsFeeds.NFL.v2_1.Enums;
 
-namespace MySportsFeeds.NetCore.v2_1.NFL.Response
+namespace MySportsFeeds.NFL.v2_1.Players.Responses
 {
     public class Season
     {

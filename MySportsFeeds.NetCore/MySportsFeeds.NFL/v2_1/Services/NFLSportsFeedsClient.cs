@@ -1,9 +1,9 @@
 ﻿using Refit;
 using System.Threading.Tasks;
-using MySportsFeeds.NetCore.v2_1.NFL.Players.Response;
-using MySportsFeeds.NetCore.v2_1.NFL.Request;
+using MySportsFeeds.NFL.v2_1.Players.Responses;
+using MySportsFeeds.NFL.v2_1.Requests;
 
-namespace MySportsFeeds.NetCore.v2_1.NFL
+namespace MySportsFeeds.NFL.v2_1
 {
     public class NFLSportsFeedsClient : SportsFeedsClientBase
     {
@@ -11,7 +11,7 @@ namespace MySportsFeeds.NetCore.v2_1.NFL
 
         public NFLSportsFeedsClient(string apiKey, string password) : base(apiKey, password)
         {
-            string baseUrl = "https://api.mysportsfeeds.com/v2.1/";
+            string baseUrl = "https://api.mysportsfeeds.com/v2.1";
             
             mySportsFeedsApi= RestService.For<IMySportsFeeds>(baseUrl);
         }

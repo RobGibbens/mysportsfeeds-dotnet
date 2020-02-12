@@ -1,4 +1,4 @@
-﻿namespace MySportsFeeds.NetCore.v2_1.NFL.Players.Response
+﻿namespace MySportsFeeds.NFL.v2_1.Players.Responses
 {
     public class ExternalMapping
     {
