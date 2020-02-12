@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 
 namespace MySportsFeeds.NetCore.v2_1.NFL.Players.Response
 {
+
     public partial class Player
     {
         [JsonProperty("id")]
@@ -30,8 +31,8 @@ namespace MySportsFeeds.NetCore.v2_1.NFL.Players.Response
         [JsonProperty("currentRosterStatus")]
         public string CurrentRosterStatus { get; set; }
 
-        [JsonProperty("currentInjury")]
-        public object CurrentInjury { get; set; }
+        //[JsonProperty("currentInjury")]
+        //public object CurrentInjury { get; set; }
 
         [JsonProperty("height")]
         public string Height { get; set; }
@@ -54,32 +55,28 @@ namespace MySportsFeeds.NetCore.v2_1.NFL.Players.Response
         [JsonProperty("rookie")]
         public bool? Rookie { get; set; }
 
-        [JsonProperty("highSchool")]
-        public object HighSchool { get; set; }
+        //[JsonProperty("highSchool")]
+        //public object HighSchool { get; set; }
 
         [JsonProperty("college")]
-        public object College { get; set; }
+        public string College { get; set; }
 
-        [JsonProperty("handedness")]
-        public object Handedness { get; set; }
+        //[JsonProperty("handedness")]
+        //public object Handedness { get; set; }
 
         [JsonProperty("officialImageSrc")]
-        public object OfficialImageSrc { get; set; }
+        public string OfficialImageSrc { get; set; }
 
-        [JsonProperty("socialMediaAccounts")]
-        public List<object> SocialMediaAccounts { get; set; }
+        //[JsonProperty("socialMediaAccounts")]
+        //public List<object> SocialMediaAccounts { get; set; }
 
-        [JsonProperty("currentContractYear")]
-        public object CurrentContractYear { get; set; }
+        //[JsonProperty("currentContractYear")]
+        //public object CurrentContractYear { get; set; }
 
         [JsonProperty("drafted")]
-        public object Drafted { get; set; }
+        public Draft Drafted { get; set; }
 
         [JsonProperty("externalMappings")]
-        public List<object> ExternalMappings { get; set; }
+        public List<ExternalMapping> ExternalMappings { get; set; }
     }
-
-
-
-
 }

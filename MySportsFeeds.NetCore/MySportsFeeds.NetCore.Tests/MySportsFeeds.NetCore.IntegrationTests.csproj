@@ -13,7 +13,6 @@
 <PrivateAssets>all</PrivateAssets>
 </PackageReference>
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
-    <PackageReference Include="refit" Version="5.0.23" />
   </ItemGroup>
 
   <ItemGroup>
