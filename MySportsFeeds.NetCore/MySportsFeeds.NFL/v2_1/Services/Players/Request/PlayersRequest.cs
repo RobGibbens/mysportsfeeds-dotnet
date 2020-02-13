@@ -8,7 +8,6 @@ namespace MySportsFeeds.NFL.v2_1.Requests
         [AliasAs("season")]
         public string Season { get; set; }
 
-
         [AliasAs("date")]
         public DateTime? Date { get; set; }
 
